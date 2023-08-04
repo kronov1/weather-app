@@ -1,0 +1,85 @@
+@import 'reset.scss';
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-image: linear-gradient(to bottom, #000000d2, #1c1c1cda);
+    border-radius: 25px;
+    padding: 25px;
+    .up-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .input-city {
+        width: calc(100% - 70px);
+        border: none;
+        outline: none;
+        padding: 10px;
+        padding-left: 15px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        color: #fff;
+        background-color: rgba(144, 144, 144, 0.301);
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.443);
+        }
+    }
+    .btn-search {
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: rgba(144, 144, 144, 0.301);
+        background-image: url("../assets/search_FILL0_wght400_GRAD0_opsz48\ \(1\)\ 1.png");
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+        cursor: pointer;
+    }
+    .city-title {
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+    .weather-count {
+        color: #fff;
+        font-weight: normal;
+        font-size: 0.9rem;
+    }
+    .weather-container {
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        align-items: center;
+        font-size: 0.9rem;
+        .weather-info-icon {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .weather-info {
+            font-size: 0.9rem;
+            text-transform: capitalize;
+        }
+    }
+    .weather-humidity {
+        color: #fff;
+        font-size: 0.9rem;
+    }
+}

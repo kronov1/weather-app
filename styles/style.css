@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Vithkuqi", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8235294118), rgba(28, 28, 28, 0.8549019608));
+  border-radius: 25px;
+  padding: 25px;
+}
+.container .up-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .input-city {
+  width: calc(100% - 70px);
+  border: none;
+  outline: none;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: rgba(144, 144, 144, 0.301);
+}
+.container .input-city::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.443);
+}
+.container .input-city::placeholder {
+  color: rgba(255, 255, 255, 0.443);
+}
+.container .btn-search {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(144, 144, 144, 0.301);
+  background-image: url("../assets/search_FILL0_wght400_GRAD0_opsz48 (1) 1.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.container .city-title {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.container .weather-count {
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+.container .weather-container {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.container .weather-container .weather-info-icon {
+  width: 30px;
+  margin-right: 10px;
+}
+.container .weather-container .weather-info {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.container .weather-humidity {
+  color: #fff;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */

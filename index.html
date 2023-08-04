@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="up-container">
+            <input class="input-city" type="text" placeholder="Digite o nome da cidade">
+            <button class="btn-search" onclick="verifyCityButton()"></button>
+        </div>
+
+        <h1 class="city-title">Tempo em <span class="city">Pernambuco</span></h1>
+
+        <p class="weather-count">26°C</p>
+
+        <div class="weather-container">
+            <img class="weather-info-icon" src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo">
+            <p class="weather-info">Nuvens Dispersas</p>
+        </div>
+
+        <p class="weather-humidity">Umidade: 70%</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
